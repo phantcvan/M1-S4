@@ -6,33 +6,226 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        header p {
-            border: 2px;
-            padding: 5px 10px;
-            background-color: rgb(191,44,36);
-            min-height: auto;
-            width: fit-content;
-            border-radius: 50px;
-            font-size: 120%;
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" href="./image/icon.png">
+
+
 </head>
 
 <body>
-    <header>
-        <div>
-            <a href=""><img style="height: 100px;" src="./data/icon.png"></a>
+    <div class="header">
+        <div class="hd1">
+            <a href="./index.html"><img style="height: 80px;" src="./image/icon.png"></a>
+        </div>
+        <div class="hd2">
+            <form method="get" action="https:www.google.com.vn/search?" class="search">
+                <input type="text" name="q" class="searchTerm" placeholder="Bạn muốn tìm gì?">
+                <button type="submit" class="searchButton">Submit</button>
+            </form>
+        </div>
+        <div class="hd3">
+            <a href="./signup.html">Đăng nhập</a>
+            <a href="./login.html">Đăng ký</a>
+        </div>
+    </div>
+    <div class="nav">
+        <table style="width: 80%; height: fit-content;margin: 25px;">
+            <tr>
+                <td><i class="material-icons"
+                        style="color: white;text-align: center;vertical-align: middle;">menu</i>&ensp;
+                    <select name="type" style="background-color: rgb(62,61,67);color: white;font-size: medium;">
+                        <option value="THỂ LOẠI">THỂ LOẠI</option>
+                        <option value="Tiên hiệp">Tiên hiệp</option>
+                        <option value="Kiếm hiệp">Kiếm hiệp</option>
+                        <option value="Hiện đại">Hiện đại</option>
+                        <option value="Ngôn tình">Ngôn tình</option>
+                        <option value="Trinh thám">Trinh thám</option>
+                    </select>
+                </td>
+                <td><a href="./index.html #done">Tất cả truyện</a></td>
+                <td><a href="./index.html #done">Truyện đã hoàn thành</a></td>
+                <td><a href="./index.html #new">Mới cập nhật</a></td>
+                <td><a href="./index.html #view">Xem nhiều</a></td>
+                <td><a href="./index.html #favor">Yêu thích</a></td>
+                <td><a href="./index.html #recommend">Truyện đề cử</a></td>
+                <td><a href="./index.html #upload">Đăng truyện</a></td>
+            </tr>
+        </table>
+    </div>
+    <div class="wrap">
+        <div class="article">
+
+                <p id="done"><b>TRUYỆN HOÀN THÀNH
+                        <i class="material-icons"
+                            style="color: rgb(3, 45, 213);vertical-align: middle;">chevron_right</i></b></p>
+                <hr>
+                <a href="https://dtruyen.com/truyen-ngon-tinh-hay/" class="art1">Ngôn tình</a>
+                <a href="https://dtruyen.com/truyen-tien-hiep-hay/" class="art1">Truyện Tiên hiệp</a>
+                <a href="https://dtruyen.com/truyen-kiem-hiep-hay/" class="art1">Truyện Kiếm hiệp</a>
+                <table style="margin-top: 15px;">
+                    <tr>
+                        <td style="width: 30%;">
+                            <a href="./tr.html" style="text-decoration: none;"><img class="arti" src="./image/HP.jpg">
+                                <p style="text-align:center;">Harry Potter và Hòn đá phù thuỷ</p>
+                            </a>
+                        </td>
+                        <td style="width: 30%;"><img class="arti" src="./image/tr.jpg">
+                            <p style="text-align: center;">Truyện 1</p>
+                        </td>
+                        <td style="width: 30%;"><img class="arti" src="./image/tr.jpg">
+                            <p style="text-align: center;">Truyện 1</p>
+                        </td>
+                    </tr>
+                </table>
+                <p style="text-align: center;"><a class="art2" href="https://dtruyen.com/truyen-full/">Xem thêm<i
+                            class="material-icons" style="color: white;vertical-align: middle;">chevron_right</i></a>
+                </p>
+            <p id="new"><b>MỚI CẬP NHẬT
+                    <i class="material-icons"
+                        style="color: rgb(3, 45, 213);vertical-align: middle;">chevron_right</i></b></p>
+            <hr>
+            <a href="https://dtruyen.com/truyen-ngon-tinh-hay/" class="art1">Ngôn tình</a>
+            <a href="https://dtruyen.com/truyen-tien-hiep-hay/" class="art1">Truyện Tiên hiệp</a>
+            <a href="https://dtruyen.com/truyen-kiem-hiep-hay/" class="art1">Truyện Kiếm hiệp</a>
+            <table style="margin-top: 15px;">
+                <tr>
+                    <td style="width: 30%;"><img class="arti" src="./image/tr.jpg">
+                        <p style="text-align:center;">Truyện 1</p>
+                    </td>
+                    <td style="width: 30%;"><img class="arti" src="./image/tr.jpg">
+                        <p style="text-align: center;">Truyện 1</p>
+                    </td>
+                    <td style="width: 30%;"><img class="arti" src="./image/tr.jpg">
+                        <p style="text-align: center;">Truyện 1</p>
+                    </td>
+                </tr>
+            </table>
+            <p style="text-align: center;"><a class="art2" href="https://dtruyen.com/all/">Xem thêm<i
+                        class="material-icons" style="color: white;vertical-align: middle;">chevron_right</i></a>
+            </p>
+
+            <p id="view"><b>XEM NHIỀU
+                    <i class="material-icons"
+                        style="color: rgb(3, 45, 213);vertical-align: middle;">chevron_right</i></b></p>
+            <hr>
+            <a href="https://dtruyen.com/truyen-ngon-tinh-hay/" class="art1">Ngôn tình</a>
+            <a href="https://dtruyen.com/truyen-tien-hiep-hay/" class="art1">Truyện Tiên hiệp</a>
+            <a href="https://dtruyen.com/truyen-kiem-hiep-hay/" class="art1">Truyện Kiếm hiệp</a>
+            <table style="margin-top: 15px;">
+                <tr>
+                    <td style="width: 30%;"><img class="arti" src="./image/tr.jpg">
+                        <p style="text-align:center;">Truyện 1</p>
+                    </td>
+                    <td style="width: 30%;"><img class="arti" src="./image/tr.jpg">
+                        <p style="text-align: center;">Truyện 1</p>
+                    </td>
+                    <td style="width: 30%;"><img class="arti" src="./image/tr.jpg">
+                        <p style="text-align: center;">Truyện 1</p>
+                    </td>
+                </tr>
+            </table>
+            <p style="text-align: center;"><a class="art2" href="https://dtruyen.com/truyen-duoc-xem-nhieu-nhat/">Xem
+                    thêm<i class="material-icons" style="color: white;vertical-align: middle;">chevron_right</i></a>
+            </p>
+
+            <p id="favor"><b>YÊU THÍCH
+                    <i class="material-icons"
+                        style="color: rgb(3, 45, 213);vertical-align: middle;">chevron_right</i></b></p>
+            <hr>
+            <a href="https://dtruyen.com/truyen-ngon-tinh-hay/" class="art1">Ngôn tình</a>
+            <a href="https://dtruyen.com/truyen-tien-hiep-hay/" class="art1">Truyện Tiên hiệp</a>
+            <a href="https://dtruyen.com/truyen-kiem-hiep-hay/" class="art1">Truyện Kiếm hiệp</a>
+            <table style="margin-top: 15px;">
+                <tr>
+                    <td style="width: 30%;"><img class="arti" src="./image/tr.jpg">
+                        <p style="text-align:center;">Truyện 1</p>
+                    </td>
+                    <td style="width: 30%;"><img class="arti" src="./image/tr.jpg">
+                        <p style="text-align: center;">Truyện 1</p>
+                    </td>
+                    <td style="width: 30%;"><img class="arti" src="./image/tr.jpg">
+                        <p style="text-align: center;">Truyện 1</p>
+                    </td>
+                </tr>
+            </table>
+            <p style="text-align: center;"><a class="art2" href="https://dtruyen.com/truyen-duoc-yeu-thich-nhat/">Xem
+                    thêm<i class="material-icons" style="color: white;vertical-align: middle;">chevron_right</i></a>
+            </p>
+
+            <p id="recommend"><b>TRUYỆN ĐỀ CỬ
+                    <i class="material-icons"
+                        style="color: rgb(3, 45, 213);vertical-align: middle;">chevron_right</i></b></p>
+            <hr>
+            <a href="https://dtruyen.com/truyen-ngon-tinh-hay/" class="art1">Ngôn tình</a>
+            <a href="https://dtruyen.com/truyen-tien-hiep-hay/" class="art1">Truyện Tiên hiệp</a>
+            <a href="https://dtruyen.com/truyen-kiem-hiep-hay/" class="art1">Truyện Kiếm hiệp</a>
+            <table style="margin-top: 15px;">
+                <tr>
+                    <td style="width: 30%;"><img class="arti" src="./image/tr.jpg">
+                        <p style="text-align:center;">Truyện 1</p>
+                    </td>
+                    <td style="width: 30%;"><img class="arti" src="./image/tr.jpg">
+                        <p style="text-align: center;">Truyện 1</p>
+                    </td>
+                    <td style="width: 30%;"><img class="arti" src="./image/tr.jpg">
+                        <p style="text-align: center;">Truyện 1</p>
+                    </td>
+                </tr>
+            </table>
+            <p style="text-align: center;"><a class="art2" href="https://dtruyen.com/">Xem thêm<i class="material-icons"
+                        style="color: white;vertical-align: middle;">chevron_right</i></a>
+            </p>
+
+
+            <p id="upload"><b>ĐĂNG TRUYỆN
+                    <i class="material-icons"
+                        style="color: rgb(3, 45, 213);vertical-align: middle;">chevron_right</i></b></p>
+            <hr>
         </div>
 
+        <div class="aside">
+            <p><b>THỂ LOẠI
+                    <i class="material-icons" style="color: rgb(3, 45, 213);vertical-align: middle;">library_books</i>
+                </b></p>
+            <hr>
+            <table style="width: 100%;">
+                <tr>
+                    <td><i class="material-icons" style="color: black;vertical-align: middle;">discount</i><a
+                            href="https://dtruyen.com/tien-hiep/">&ensp; Tiên hiệp</a>
+                    </td>
+                    <td><i class="material-icons" style="color: black;vertical-align: middle;">discount</i><a
+                            href="https://dtruyen.com/kiem-hiep/">&ensp; Kiếm hiệp</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td><i class="material-icons" style="color: black;vertical-align: middle;">discount</i><a
+                            href="https://dtruyen.com/ngon-tinh/">&ensp; Ngôn tình</a>
+                    </td>
+                    <td><i class="material-icons" style="color: black;vertical-align: middle;">discount</i><a
+                            href="https://dtruyen.com/cung-dau/">&ensp; Cung đấu</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td><i class="material-icons" style="color: black;vertical-align: middle;">discount</i><a
+                            href="https://dtruyen.com/hien-dai/">&ensp; Hiện đại</a>
+                    </td>
+                    <td><i class="material-icons" style="color: black;vertical-align: middle;">discount</i><a
+                            href="https://dtruyen.com/phuong-tay/">&ensp; Phương tây</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td><i class="material-icons" style="color: black;vertical-align: middle;">discount</i><a
+                            href="https://dtruyen.com/dien-van/">&ensp; Điền văn</a>
+                    </td>
+                    <td><i class="material-icons" style="color: black;vertical-align: middle;">discount</i><a
+                            href="https://dtruyen.com/xuyen-khong/">&ensp; Xuyên không</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
 
-        <p>Đăng nhập</p>
-    </header>
 </body>
 
 </html>
